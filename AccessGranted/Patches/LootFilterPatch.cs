@@ -6,7 +6,7 @@ namespace AetharNet.Mods.ZumbiBlocks2.AccessGranted.Patches;
 public static class LootFilterPatch
 {
     [HarmonyPostfix]
-    [HarmonyPatch("FilterChanceByTier")]
+    [HarmonyPatch(nameof(LootFilter.FilterChanceByTier))]
     public static void IgnoreTierFilter(ref double __result, double originalChance)
     {
         // The game implements a tier-bias system, in which it penalizes
