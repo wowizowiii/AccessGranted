@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
 
@@ -11,14 +10,13 @@ public class AccessGranted : BaseUnityPlugin
     public const string PluginGUID = "AetharNet.Mods.ZumbiBlocks2.AccessGranted";
     public const string PluginAuthor = "wowi";
     public const string PluginName = "AccessGranted";
-    public const string PluginVersion = "0.2.1";
+    public const string PluginVersion = "0.3.0";
 
     internal new static ManualLogSource Logger;
-    
+
     private void Awake()
     {
         Logger = base.Logger;
-
-        Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), PluginGUID);
+        Harmony.CreateAndPatchAll(typeof(AccessGranted).Assembly, PluginGUID);
     }
 }
