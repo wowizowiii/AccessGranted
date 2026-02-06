@@ -2,7 +2,7 @@
 
 AccessGranted is a server-side mod for [Zumbi Blocks 2](https://store.steampowered.com/app/1941780/Zumbi_Blocks_2_Open_Alpha/) that adds currently-unreleased items into the game.
 
-**Now updated for 2.1.1.0!**
+**Now updated for 2.1.3.0!**
 
 > [!NOTE]
 > These items are unreleased for a reason. They lack sound, settings, balancing, and first-person support.
